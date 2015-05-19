@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Global-e Test</title>
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendor/mustache/mustache.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="search_box"><h1>search</h1></label>
+            <input type="text" id="search_box" name="nameInput"/>
+            <button type="button" onclick="Search.Contacts.Search($('#search_box').val())">search</button>
+        </div>
+    </form>
+    <ul id="search_results" class="list-group"></ul>
+    <script type="mustache/x-tmpl" id="name_matches_tmpl">
+          {{#matches}}
+          <li class="">{{full_name}}</li>
+          {{/matches}}
+          {{^matches}}
+          <li><em>No matches found </em></li>
+          {{/matches}}
+        </script>
+</body>
+</html>

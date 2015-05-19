@@ -1,0 +1,15 @@
+{
+    "name": "oshry/global",
+    "authors": [
+        {
+            "name": "oshry",
+            "email": "oshrylevy@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Search\\": "src/Search/"
+        }
+    }
+}
